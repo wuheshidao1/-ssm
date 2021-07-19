@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var a = document.URL;//url中时经过编码之后的，
+    a = unescape(a);    //要进行解码
+    document.write(a.substring(a.indexOf("message=")+8,a.length));
+</script>
+
+</body>
+</html>

